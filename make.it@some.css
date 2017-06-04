@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #191919;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+}
+
+img,
+p,
+h1,
+h2,
+h3 {
+    padding: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #323232;
+}
+
+p>strong {
+    /*font-weight: normal;*/
+    /*text-decoration: underline;*/
+    /*background-color: hotpink;*/
+    /*color: white;*/
+    /*border: 1px solid red;*/
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+p a {
+    text-decoration: none;
+    padding: 2px;
+    background-color: hotpink;
+    color: white;
+    border: 1px solid red;
+}
+
+p a:hover {
+    color: white;
+}
+
+html {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body {
+    width: 960px;
+    background-color: mintcream;
+    left: 0;
+    top: 50px;
+    position: relative;
+}
+
+input[type=submit] {
+    margin-right: 8px;
+    padding: 6px;
+    outline: 0;
+    font-size: 1rem;
+}
+
+input[name^="save"] {
+    border: 1px solid #131418;
+    background-color: transparent;
+    color: #131418;
+}
+
+input[name^="save"]:hover {
+    background-color: #131418;
+    color: mintcream;
+}
+
+input[name^="delete"] {
+    border: 1px solid #b92b27;
+    background-color: transparent;
+    color: #b92b27;
+}
+
+input[name^="delete"]:hover {
+    background-color: #b92b27;
+    color: mintcream;
+}
+
+input[name^="update"] {
+    border: 1px solid #f57d00;
+    background-color: transparent;
+    color: #f57d00;
+}
+
+input[name^="update"]:hover {
+    background-color: #f57d00;
+    color: mintcream;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 2rem;
+}
+
+a {
+    padding: 4px;
+    text-decoration: none;
+    color: #00b4ff;
+}
+
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+div > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div > ul >li {
+    line-height: 40px;
+    flex: 1;
+}
+
+div > ul >li >a {
+    display: block;
+    background-color: rgb(230, 241, 241);
+    text-align: center;
+    /*background-color: red;*/
+}
+
+div>ul>li>a:hover {
+    background-color: #00b4ff;
+    color: mintcream;
+    text-decoration: none;
+}
+
+nav {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 1px gray;
+}
+
+nav img {
+    padding: 0;
+}
+
+nav > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul >li {
+    line-height: 40px;
+    flex: 1;
+}
+
+nav > ul >li >a {
+    display: block;
+    background-color: #00b4ff;
+    text-align: center;
+    color: mintcream;
+    /*background-color: red;*/
+}
+
+nav>ul>li>a:hover {
+    background-color: mintcream;
+    color: #00b4ff;
+    text-decoration: none;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+p:first-letter {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio] + label span {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url(http://placehold.it/20x20);
+    border: 2px solid blue;
+    /*transform: translateY(50%);*/
+}
+
+input[type=radio] + label:checked span {
+    background-color: red;
+}
+
+div > h1 {
+    display: inline-block;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div p {
+    color: #3a3a3a;
+    background-color: rgba(206, 206, 206, 0.24);
+    padding: 8px;
+    font-size: 1rem;
+}
+
+div img {
+    display: inline-block;
+}
+
+div div {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img {
+    display: block;
+    margin: auto auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form fieldset {
+    border: 1px solid #B0BEC5;
+    display: flex;
+    padding: 16px;
+    margin: 16px;
+    width: 50%;
+}
+
+fieldset legend {
+    font-size: 1.2rem;
+    color: #323232;
+    padding: 4px;
+    border: 1px solid #B0BEC5;
+}
+
+fieldset div {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /*background-color: red;*/
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    outline: 1px solid #00b4ff;
+}
+
+th {
+    padding: 4px;
+    text-align: left;
+    background-color: #00b4ff;
+    color: mintcream;
+}
+
+tr,
+td {
+    padding: 4px;
+}
+
+tr:nth-child(odd) {
+    background-color: #E0F7FA;
+}
+
+tr:nth-child(even) {
+    background-color: #B2EBF2;
+}
+
+tr:hover td {
+    background-color: #37474F;
+    color: mintcream;
+}

@@ -1,0 +1,266 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+*,
+nav img {
+    padding: 0
+}
+
+a,
+h1,
+h2,
+h3,
+img,
+p,
+td,
+th,
+tr {
+    padding: 4px
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: #191919;
+    font-family: Roboto, sans-serif;
+    transition: background-color .3s ease-in-out;
+    transition: color .3s ease-in-out
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #323232
+}
+
+html {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+div,
+div>ul,
+nav>ul {
+    flex-direction: row;
+    width: 100%
+}
+
+body {
+    width: 960px;
+    background-color: #f5fffa;
+    left: 0;
+    top: 50px;
+    position: relative
+}
+
+input[type=submit] {
+    margin-right: 8px;
+    padding: 6px;
+    outline: 0;
+    font-size: 1rem
+}
+
+input[name^=save] {
+    border: 1px solid #131418;
+    background-color: transparent;
+    color: #131418
+}
+
+input[name^=save]:hover {
+    background-color: #131418;
+    color: #f5fffa
+}
+
+input[name^=delete] {
+    border: 1px solid #b92b27;
+    background-color: transparent;
+    color: #b92b27
+}
+
+input[name^=delete]:hover {
+    background-color: #b92b27;
+    color: #f5fffa
+}
+
+input[name^=update] {
+    border: 1px solid #f57d00;
+    background-color: transparent;
+    color: #f57d00
+}
+
+input[name^=update]:hover {
+    background-color: #f57d00;
+    color: #f5fffa
+}
+
+input[type=text] {
+    width: 100%;
+    height: 2rem
+}
+
+a {
+    text-decoration: none;
+    color: #00b4ff
+}
+
+a:hover {
+    color: #ff69b4;
+    text-decoration: underline
+}
+
+div>ul>li>a:hover,
+nav>ul>li>a:hover {
+    text-decoration: none
+}
+
+ul {
+    list-style: none
+}
+
+div>ul,
+nav>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+
+div>ul>li,
+nav>ul>li {
+    line-height: 40px;
+    flex: 1
+}
+
+div>ul>li>a {
+    display: block;
+    background-color: #e6f1f1;
+    text-align: center
+}
+
+div>ul>li>a:hover,
+nav>ul>li>a {
+    background-color: #00b4ff;
+    color: #f5fffa
+}
+
+nav {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    opacity: .8;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 1px gray
+}
+
+nav>ul>li>a {
+    display: block;
+    text-align: center
+}
+
+div,
+div div,
+div>h1,
+form {
+    display: flex
+}
+
+nav>ul>li>a:hover {
+    background-color: #f5fffa;
+    color: #00b4ff
+}
+
+div {
+    justify-content: flex-start;
+    flex-wrap: wrap
+}
+
+p {
+    font-size: 1.2rem
+}
+
+div>h1 {
+    text-align: right;
+    flex-direction: row;
+    justify-content: center
+}
+
+div p {
+    color: #3a3a3a;
+    background-color: rgba(206, 206, 206, .24);
+    padding: 8px;
+    font-size: 1rem
+}
+
+div img {
+    display: inline-block
+}
+
+div div {
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center
+}
+
+img {
+    display: block;
+    margin: auto
+}
+
+form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+form fieldset {
+    border: 1px solid #B0BEC5;
+    display: flex;
+    padding: 16px;
+    margin: 16px;
+    width: 50%
+}
+
+fieldset legend {
+    font-size: 1.2rem;
+    color: #323232;
+    padding: 4px;
+    border: 1px solid #B0BEC5
+}
+
+fieldset div {
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    outline: #00b4ff solid 1px
+}
+
+th {
+    text-align: left;
+    background-color: #00b4ff;
+    color: #f5fffa
+}
+
+tr:nth-child(odd) {
+    background-color: #E0F7FA
+}
+
+tr:nth-child(even) {
+    background-color: #B2EBF2
+}
+
+tr:hover td {
+    background-color: #37474F;
+    color: #f5fffa
+}
